@@ -13,38 +13,60 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
-    <script src="schedule.js.js"></script>
+    <script src="schedule.js"></script>
 </head>
 <body>
     <h1>My Schedule</h1>
     <form>
-        <input type="radio" id="monday">
-        <label for="monday">Monday</label>
-        <br>
+        <fieldset>
+            <legend>Choose a day to view schedule</legend>
+            <div id="day">
+            <input type="radio" id="monday" name="day">
+            <label for="monday">Monday</label>
+            <br>
 
-        <input type="radio" id="tuesday">
-        <label for="tuesday">Tuesday</label>
-        <br>
+            <input type="radio" id="tuesday" name="day">
+            <label for="tuesday">Tuesday</label>
+            <br>
 
-        <input type="radio" id="wednesday">
-        <label for="wednesday">Wednesday</label>
-        <br>
+            <input type="radio" id="wednesday" name="day">
+            <label for="wednesday">Wednesday</label>
+            <br>
 
-        <input type="radio" id="thursday">
-        <label for="thursday">Thursday</label>
-        <br>
+            <input type="radio" id="thursday" name="day">
+            <label for="thursday">Thursday</label>
+            <br>
 
-        <input type="radio" id="friday">
-        <label for="friday">Friday</label>
-        <br>
+            <input type="radio" id="friday" name="day">
+            <label for="friday">Friday</label>
+            <br>
 
-        <input type="radio" id="saturday">
-        <label for="saturday">Saturday</label>
-        <br>
+            <input type="radio" id="saturday" name="day">
+            <label for="saturday">Saturday</label>
+            <br>
 
-        <input type="radio" id="sunday">
-        <label for="sunday">Sunday</label>
-        <br>
+            <input type="radio" id="sunday" name="day">
+            <label for="sunday">Sunday</label>
+            <br>
+            </div>
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <h3>Event</h3>
+                <div class="row padded">
+                    <div class="col">
+                        <p id="event"></p>
+                    </div>
+                </div>
+            <h3>Time</h3>
+                <div class="row padded">
+                    <div class="col">
+                        <p id="time"></p>
+                    </div>
+                </div>
+        </fieldset>
     </form>
 </body>
 </html>
